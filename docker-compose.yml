@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  # ── Default: synthetic corpus, k=6 ────────────────────────────────────────
+  patent-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: patent-pipeline:latest
+    container_name: patent-pipeline
+    volumes:
+      - ./outputs:/app/outputs # results appear on your host machine
+    command: >
+      python main.py
+        --source synthetic
+        --n 48
+        --k 6
+        --topics 6
+
+  # ── PatentsView API (real patents) ─────────────────────────────────────────
+  patent-pipeline-real:
+    image: patent-pipeline:latest
+    container_name: patent-pipeline-real
+    volumes:
+      - ./outputs:/app/outputs
+    command: >
+      python main.py
+        --source patentsview
+        --n 500
+        --k 8
+        --topics 8
+
+  # ── Quick smoke-test (no viz, no report) ──────────────────────────────────
+  patent-pipeline-test:
+    image: patent-pipeline:latest
+    container_name: patent-pipeline-test
+    volumes:
+      - ./outputs:/app/outputs
+    command: >
+      python main.py
+        --source synthetic
+        --n 48
+        --k 6
+        --topics 6
+        --no-viz
+        --no-report
