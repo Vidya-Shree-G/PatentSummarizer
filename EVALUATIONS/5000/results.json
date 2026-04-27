@@ -1,0 +1,466 @@
+{
+  "source": "bigpatent",
+  "n_patents": 5000,
+  "k": 5,
+  "n_topics": 3,
+  "best_model": "LDA + KMeans",
+  "metrics": {
+    "TF-IDF + KMeans": {
+      "silhouette": 0.1134007300622056,
+      "davies_bouldin": 3.602745576193776,
+      "ari": 0.12185396569194928,
+      "nmi": 0.1709467507480108,
+      "stability_ari": 0.9079101767555867
+    },
+    "LDA + KMeans": {
+      "silhouette": 0.7617295779821608,
+      "davies_bouldin": 0.6179198775383444,
+      "ari": 0.13457270836315707,
+      "nmi": 0.15282581683525195,
+      "stability_ari": 0.998688240869189
+    },
+    "SBERT + KMeans": {
+      "silhouette": 0.04535822570323944,
+      "davies_bouldin": 5.061143514722938,
+      "ari": 0.15016845177989757,
+      "nmi": 0.18166025514936365,
+      "stability_ari": 0.9398932652731933
+    },
+    "SBERT + Hierarchical": {
+      "silhouette": 0.025651516392827034,
+      "davies_bouldin": 6.0100696882979205,
+      "ari": 0.13434984892072555,
+      "nmi": 0.16556996309508987,
+      "stability_ari": 0.9398932652731933
+    }
+  },
+  "summary_scores": {
+    "TF-IDF + KMeans": {
+      "rouge1": 0.260030834914611,
+      "rouge2": 0.0064516129032258064,
+      "rougeL": 0.19283285895003163,
+      "coverage": 0.125,
+      "proximity": 0.034328891790063876
+    },
+    "LDA + KMeans": {
+      "rouge1": 0.2795023103258397,
+      "rouge2": 0.04026806526806527,
+      "rougeL": 0.238923603629486,
+      "coverage": 0.2,
+      "proximity": 0.02017168249087564
+    },
+    "SBERT + KMeans": {
+      "rouge1": 0.26556915090841676,
+      "rouge2": 0.013333333333333332,
+      "rougeL": 0.2057397107897664,
+      "coverage": 0.1,
+      "proximity": 0.03215692574844843
+    },
+    "SBERT + Hierarchical": {
+      "rouge1": 0.284200964034112,
+      "rouge2": 0.034269293924466336,
+      "rougeL": 0.20274431908469728,
+      "coverage": 0.1,
+      "proximity": 0.032920434435026735
+    }
+  },
+  "summaries": {
+    "TF-IDF + KMeans": [
+      {
+        "cluster_id": 0,
+        "size": 824,
+        "keywords": [
+          "valve",
+          "air",
+          "pressure",
+          "fluid",
+          "engine",
+          "gas",
+          "chamber",
+          "flow"
+        ],
+        "summary": "A fuel-level measuring apparatus measures the level of fuel in a vehicle fuel tank. A fuel-level measuring apparatus measures the level of fuel in a vehicle fuel tank. The apparatus can ensure a sufficient capacity of the fuel tank and sense the fuel level even when the fuel tank has a thin or complicated shape. A fuel-level measuring apparatus that senses the level of fuel in a vehicle fuel tank ",
+        "representative_titles": [
+          "A combustion control system adds a fluid and heat energy to the air-fuel mixture of the induction sy",
+          "An internal combustion engine uses separate, tubular and hollow reciprocating sleeve valves that ope"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 696,
+        "keywords": [
+          "data",
+          "information",
+          "network",
+          "user",
+          "method",
+          "device",
+          "computer",
+          "memory"
+        ],
+        "summary": "Methods and systems are provided for obtaining information related to a customer service location an. Methods and systems are provided for obtaining information related to a customer service location and directions for routing a service technician from one customer service location to another. One embodiment includes requesting at least one set of coordinates associated with the customer service l",
+        "representative_titles": [
+          "A method and apparatus for ensuring the security of a particular configuration of hardware and softw",
+          "Utilization of stored of personalized information and communication preferences in a profile in a ST"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "size": 1570,
+        "keywords": [
+          "member",
+          "device",
+          "assembly",
+          "end",
+          "having",
+          "portion",
+          "body",
+          "includes"
+        ],
+        "summary": "A sales-inducement business method which preferably uses a roulette wheel provided by merchants for. A sales-inducement business method which preferably uses a roulette wheel provided by merchants for their customers to play for having charges paid by the customers for goods and services refunded by the merchant if the customers win the game. Described as preferred games are miniature roulette gam",
+        "representative_titles": [
+          "A passive treadmill having a governor to adjustably limit the rate of speed of the treadmill belt",
+          "A structural unit, such as for instance a storage framework composed of a plurality of storage frame"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 901,
+        "keywords": [
+          "layer",
+          "substrate",
+          "invention",
+          "material",
+          "method",
+          "semiconductor",
+          "surface",
+          "metal"
+        ],
+        "summary": "A waveguide hologram illumination system is based on thin substrate waveguides bearing a hologram on. A waveguide hologram illumination system is based on thin substrate waveguides bearing a hologram on the surface through which light is diffracted out. A light source is optically coupled to the waveguide such that light emitted from the source is caused to propagate along the waveguide, being dif",
+        "representative_titles": [
+          "In order to form MOSFET structures, a cobalt layer (16) is deposited and sintered, at about 400\u00b0 C",
+          "A method of producing a microencapsulated pharmaceutical formulation is disclosed comprising causing"
+        ]
+      },
+      {
+        "cluster_id": 4,
+        "size": 1009,
+        "keywords": [
+          "signal",
+          "circuit",
+          "light",
+          "image",
+          "output",
+          "control",
+          "device",
+          "signals"
+        ],
+        "summary": "A system for compensating electromagnetic interfering fields is provided that includes two triaxial. A system for compensating electromagnetic interfering fields is provided that includes two triaxial magnetic field sensors for outputting real sensor signals; six compensation coils, which are arranged as a cage around an object to be protected, and may individually be actuated; a control unit havi",
+        "representative_titles": [
+          "Provision is made in a method and a device for detecting elementary particles such as for example pr",
+          "A circuit for handling pulse width modulation (PWM) first signal and PWM second signal for outputtin"
+        ]
+      }
+    ],
+    "LDA + KMeans": [
+      {
+        "cluster_id": 0,
+        "size": 440,
+        "keywords": [
+          "light",
+          "layer",
+          "device",
+          "method",
+          "surface",
+          "substrate",
+          "invention",
+          "image"
+        ],
+        "summary": "A waveguide hologram illumination system is based on thin substrate waveguides bearing a hologram on. A waveguide hologram illumination system is based on thin substrate waveguides bearing a hologram on the surface through which light is diffracted out. A light source is optically coupled to the waveguide such that light emitted from the source is caused to propagate along the waveguide, being dif",
+        "representative_titles": [
+          "An embodiment of the present invention discloses a Liquid Crystal on Silicon (LCOS) display unit, in",
+          "A spliceless optical-fiber resonant-ring laser gyroscopic system is disclosed"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 938,
+        "keywords": [
+          "valve",
+          "pressure",
+          "engine",
+          "fuel",
+          "fluid",
+          "air",
+          "gas",
+          "chamber"
+        ],
+        "summary": "A solid-state accelerometer module adapted to control the operation of the taillights in a motor veh. A solid-state accelerometer module adapted to control the operation of the taillights in a motor vehicle for warning the driver of the trailing motor vehicle of a deceleration of the lead vehicle. A retrofit tail lamp contains the solid-state accelerometer module within its housing and by means of",
+        "representative_titles": [
+          "A torque transmitting unit in the power train of a motor vehicle for transmitting torque between a d",
+          "A dish washing machine capable of improving spatial utilization of a washing tub through the enlarge"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "size": 1721,
+        "keywords": [
+          "signal",
+          "data",
+          "method",
+          "image",
+          "information",
+          "device",
+          "circuit",
+          "network"
+        ],
+        "summary": "Methods and systems are provided for obtaining information related to a customer service location an. Methods and systems are provided for obtaining information related to a customer service location and directions for routing a service technician from one customer service location to another. One embodiment includes requesting at least one set of coordinates associated with the customer service l",
+        "representative_titles": [
+          "The digital message display for vehicles detects a tailgater and automatically flashes a warning mes",
+          "A cuvette ( 10 ) for storing a biological sample to be analyzed by means of a predefined detection t"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 1320,
+        "keywords": [
+          "member",
+          "portion",
+          "surface",
+          "second",
+          "end",
+          "device",
+          "having",
+          "layer"
+        ],
+        "summary": "A rotating Doppler Frequency shifter comprises spiral members which surround a first mirror affixed. A rotating Doppler Frequency shifter comprises spiral members which surround a first mirror affixed to a rotating shaft, and a second mirror affixed to an arm which extends from the shaft and rotates therewith. Each spiral member has a reflective inner surface which is shaped such as to reflect a s",
+        "representative_titles": [
+          "Reticles and reticle blanks are disclosed for performing charged-particle-beam (CPB) microlithograph",
+          "A brassiere with floating cups which are independently positionable in relation to the brassiere bod"
+        ]
+      },
+      {
+        "cluster_id": 4,
+        "size": 581,
+        "keywords": [
+          "device",
+          "housing",
+          "air",
+          "having",
+          "surface",
+          "assembly",
+          "valve",
+          "includes"
+        ],
+        "summary": "A rotor which carries a transducer for a rotating-head device is fabricated from a substantially cir. A rotor which carries a transducer for a rotating-head device is fabricated from a substantially circular aluminum support means with a stretched length of stainless steel foil encircling its perimeter. The rotor is bonded together by anchoring stainless steel pins into the periphery of said alumi",
+        "representative_titles": [
+          "A steering column for a motor vehicle includes a casing unit, which rotatably supports a steering sh",
+          "The invention relates to an absorbent structure for cleaning surfaces"
+        ]
+      }
+    ],
+    "SBERT + KMeans": [
+      {
+        "cluster_id": 0,
+        "size": 683,
+        "keywords": [
+          "light",
+          "image",
+          "optical",
+          "display",
+          "device",
+          "laser",
+          "lens",
+          "apparatus"
+        ],
+        "summary": "A rotating Doppler Frequency shifter comprises spiral members which surround a first mirror affixed. A rotating Doppler Frequency shifter comprises spiral members which surround a first mirror affixed to a rotating shaft, and a second mirror affixed to an arm which extends from the shaft and rotates therewith. Each spiral member has a reflective inner surface which is shaped such as to reflect a s",
+        "representative_titles": [
+          "Provided is a lighting device capable of reducing an impact on the surrounding area",
+          "A position detecting system includes a light source device for providing coherent light, an incohere"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 882,
+        "keywords": [
+          "invention",
+          "method",
+          "layer",
+          "material",
+          "present",
+          "substrate",
+          "present invention",
+          "relates"
+        ],
+        "summary": "In one embodiment, a test strip for testing for cholesterol-related blood analytes in whole blood in. In one embodiment, a test strip for testing for cholesterol-related blood analytes in whole blood includes a red blood cell separation layer, the red blood cell separation layer separating red blood cells from a blood sample applied to the test strip as the blood sample flows downward through the ",
+        "representative_titles": [
+          "The invention concerns an apparatus and a process for producing a marking on a substrate",
+          "A method for coating individual items each having two plain and parallel sides comprises two process"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "size": 1178,
+        "keywords": [
+          "signal",
+          "data",
+          "method",
+          "information",
+          "circuit",
+          "device",
+          "network",
+          "second"
+        ],
+        "summary": "Methods and systems are provided for obtaining information related to a customer service location an. Methods and systems are provided for obtaining information related to a customer service location and directions for routing a service technician from one customer service location to another. One embodiment includes requesting at least one set of coordinates associated with the customer service l",
+        "representative_titles": [
+          "A method and implementing system are provided for enabling a wireless device to access a remote serv",
+          "A system for interrogating electrical leads to correctly ascertain the identity of equipment attache"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 940,
+        "keywords": [
+          "valve",
+          "fluid",
+          "pressure",
+          "air",
+          "engine",
+          "gas",
+          "fuel",
+          "flow"
+        ],
+        "summary": "A fuel-level measuring apparatus measures the level of fuel in a vehicle fuel tank. A fuel-level measuring apparatus measures the level of fuel in a vehicle fuel tank. The apparatus can ensure a sufficient capacity of the fuel tank and sense the fuel level even when the fuel tank has a thin or complicated shape. A fuel-level measuring apparatus that senses the level of fuel in a vehicle fuel tank ",
+        "representative_titles": [
+          "A high-performance oil pump for pumping oil in an internal combustion engine that eliminates or grea",
+          "A valve and method of constructing same for a purge control device are provided"
+        ]
+      },
+      {
+        "cluster_id": 4,
+        "size": 1317,
+        "keywords": [
+          "member",
+          "assembly",
+          "device",
+          "having",
+          "includes",
+          "portion",
+          "end",
+          "support"
+        ],
+        "summary": "A sales-inducement business method which preferably uses a roulette wheel provided by merchants for. A sales-inducement business method which preferably uses a roulette wheel provided by merchants for their customers to play for having charges paid by the customers for goods and services refunded by the merchant if the customers win the game. Described as preferred games are miniature roulette gam",
+        "representative_titles": [
+          "A working machine is frontally provided with a structure for removably supporting an implement",
+          "An operating mechanism controls and trips a separable contact structure arranged in a protected circ"
+        ]
+      }
+    ],
+    "SBERT + Hierarchical": [
+      {
+        "cluster_id": 0,
+        "size": 1201,
+        "keywords": [
+          "signal",
+          "data",
+          "method",
+          "information",
+          "circuit",
+          "device",
+          "network",
+          "second"
+        ],
+        "summary": "Methods and systems are provided for obtaining information related to a customer service location an. Methods and systems are provided for obtaining information related to a customer service location and directions for routing a service technician from one customer service location to another. One embodiment includes requesting at least one set of coordinates associated with the customer service l",
+        "representative_titles": [
+          "A system for interrogating electrical leads to correctly ascertain the identity of equipment attache",
+          "A method and implementing system are provided for enabling a wireless device to access a remote serv"
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "size": 1170,
+        "keywords": [
+          "valve",
+          "air",
+          "fuel",
+          "fluid",
+          "engine",
+          "gas",
+          "pressure",
+          "flow"
+        ],
+        "summary": "A noise sensing bobbin-coil assembly for use in conjunction with a musical instrument pickup is disc. A noise sensing bobbin-coil assembly for use in conjunction with a musical instrument pickup is disclosed. In particular, the bobbin of the bobbin-coil assembly is adapted to resist induced eddy currents thereby allowing a fewer number of coils to be used which in turn reduces undesirable interact",
+        "representative_titles": [
+          "According to one exemplary embodiment, a compact fluid purification device includes a housing having",
+          "A valve and method of constructing same for a purge control device are provided"
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "size": 536,
+        "keywords": [
+          "method",
+          "invention",
+          "layer",
+          "semiconductor",
+          "substrate",
+          "composition",
+          "material",
+          "present"
+        ],
+        "summary": "A method for determining the presence of malignancy disease in a subject person includes obtaining a. A method for determining the presence of malignancy disease in a subject person includes obtaining a test sample of blood plasma from the person, measuring intensities of Raman scattering from the plasma at frequencies in the frequency shift range between 1000 cm -1  and 1600 cm -1 , and comparing",
+        "representative_titles": [
+          "A method for coating individual items each having two plain and parallel sides comprises two process",
+          "Methods and compositions for stimulating the growth of hair are disclosed wherein said compositions"
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "size": 1554,
+        "keywords": [
+          "device",
+          "member",
+          "assembly",
+          "includes",
+          "having",
+          "portion",
+          "position",
+          "vehicle"
+        ],
+        "summary": "A solid-state accelerometer module adapted to control the operation of the taillights in a motor veh. A solid-state accelerometer module adapted to control the operation of the taillights in a motor vehicle for warning the driver of the trailing motor vehicle of a deceleration of the lead vehicle. A retrofit tail lamp contains the solid-state accelerometer module within its housing and by means of",
+        "representative_titles": [
+          "A working machine is frontally provided with a structure for removably supporting an implement",
+          "An operating mechanism controls and trips a separable contact structure arranged in a protected circ"
+        ]
+      },
+      {
+        "cluster_id": 4,
+        "size": 539,
+        "keywords": [
+          "light",
+          "image",
+          "optical",
+          "display",
+          "laser",
+          "lens",
+          "device",
+          "beam"
+        ],
+        "summary": "A method for investigating a sample ( 1 ), derived from a biological source, using CARS microscopy i. A method for investigating a sample ( 1 ), derived from a biological source, using CARS microscopy is proposed, in which method a resonance signal generated by coherent anti-Stokes Raman scattering by excitation of at least one resonance site ( 5 ) of the sample ( 1 ) by means of laser irradiation",
+        "representative_titles": [
+          "Provided is a lighting device capable of reducing an impact on the surrounding area",
+          "A position detecting system includes a light source device for providing coherent light, an incohere"
+        ]
+      }
+    ]
+  },
+  "cpc_counts": {
+    "G06N": 1000,
+    "H01L": 1000,
+    "A61B": 1000,
+    "B60W": 1000,
+    "H02S": 1000
+  },
+  "lda_coherence": 0.06959689705195943,
+  "elapsed_sec": 374.47973585128784
+}
